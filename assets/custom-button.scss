@@ -16,11 +16,13 @@
         border-style: solid;
         border-color: #6b54c0;
 
-        &:after {
-            content: "";
-            position:absolute;
-            background-color: white;
-        }
+       
+    }
+
+    &:after {
+        content: "";
+        position:absolute;
+        background-color: white;
     }
 
 }
