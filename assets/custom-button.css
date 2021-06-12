@@ -1,1 +1,19 @@
-/* No CSS *//*# sourceMappingURL=custom-button.css.map */
+.product__btn {
+  padding: 10px 10px 10px 0px;
+}
+
+.btn__custom {
+  position: relative;
+  background-color: #8d6eff;
+}
+
+.btn__custom:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 5px 5px 0;
+  border-style: solid;
+  border-color: #6b54c0;
+}
+/*# sourceMappingURL=custom-button.css.map */
