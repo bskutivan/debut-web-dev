@@ -14,18 +14,8 @@
         
     {% endif %}
 
-    <div class="grid" role="list" 
-    style=
-        "display: flex; 
-        @media screen and (max-width: 1024px) {
-            -webkit-column-count: 2;
-            -webkit-column-gap:   0px;
-            -moz-column-count:    2;
-            -moz-column-gap:      0px;
-            column-count:         2;
-            column-gap:           0px;
-    }"
-    >
+    <div class="grid grid__custom-two-columns" role="list" 
+    style= "display: flex;">
 
         {% for product in collections[featured].products %}
 
