@@ -20,9 +20,9 @@
             <div class="grid__item product" role="listitem">
 
                 <a href="{{product.url}}" class="product__image-wrapper" title="{{ product.title | escape}}">
-                    <img class="product__image"
-                      src="{{img_url}}" 
-                      alt="{{product.featured_image.alt | escape}}">
+                    {% for image in product.images %}
+                        <img class="product__image" src="{{ image.src | product_img_url: 'medium' }}">
+                    {% endfor %}
                 </a>
 
                 <div class="product__title">
