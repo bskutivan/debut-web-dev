@@ -7012,4 +7012,13 @@ hr {
     column-count:         2;
     column-gap:           0px;
   }
+
+  .grid__item_custom {
+    width: 70%;
+    margin-bottom: 18px;
+  }
+
+  .product__image__custom {
+    width: 100%;
+  }
 }

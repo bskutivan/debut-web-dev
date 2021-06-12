@@ -20,11 +20,11 @@
 
             {% assign img_url = product.featured_image %}
 
-            <div class="grid__item product" role="listitem">
+            <div class="grid__item grid__item__custom product" role="listitem">
 
                 <a href="{{product.url}}" class="product__image-wrapper" title="{{ product.title | escape}}">
                     {% for image in product.images %}
-                        <img class="product__image" src="{{ image.src | product_img_url: 'medium' }}">
+                        <img class="product__image product__image__custom" src="{{ image.src | product_img_url: 'medium' }}">
                     {% endfor %}
                 </a>
 
