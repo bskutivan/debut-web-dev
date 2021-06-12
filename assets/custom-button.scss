@@ -15,5 +15,12 @@
         border-width: 0 5px 5px 0;
         border-style: solid;
         border-color: #6b54c0;
+
+        &:after {
+            content: "";
+            position:absolute;
+            background-color: white;
+        }
     }
+
 }

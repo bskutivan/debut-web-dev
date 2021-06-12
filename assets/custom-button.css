@@ -16,4 +16,10 @@
   border-style: solid;
   border-color: #6b54c0;
 }
+
+.btn__custom:before:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+}
 /*# sourceMappingURL=custom-button.css.map */
