@@ -7,7 +7,7 @@
   background-color: #8d6eff;
   border: solid;
   border-color: #8d6eff;
-  border-bottom-right-radius: 0 0 23px 0;
+  border-bottom-right-radius: 26.2px;
   width: 75%;
 }
 
@@ -25,14 +25,8 @@
 }
 
 .btn__custom:hover {
-  background-color: transparent;
-  color: black;
+  background-color: transparent !important;
+  color: black !important;
   border-width: 2px;
-}
-
-.btn__custom:after {
-  content: "";
-  position: absolute;
-  background-color: white;
 }
 /*# sourceMappingURL=custom-button.css.map */
