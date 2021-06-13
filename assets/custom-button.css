@@ -7,8 +7,8 @@
   background-color: #8d6eff;
   border: solid;
   border-color: #8d6eff;
-  border-bottom-left-radius: 10px;
-  width: 65%;
+  border-bottom-right-radius: 0 0 23px 0;
+  width: 75%;
 }
 
 .btn__custom:before {
@@ -27,6 +27,7 @@
 .btn__custom:hover {
   background-color: transparent;
   color: black;
+  border-width: 2px;
 }
 
 .btn__custom:after {
