@@ -6,15 +6,18 @@
 .btn__custom {
     position: relative;
     background-color: #8d6eff;
+    border: none;
 
     &:before {
         content: "";
         position: absolute;
-        top: 0;
+        bottom: 0;
         right: 0;
-        border-width: 0 5px 5px 0;
+        border-width: 8px;
         border-style: solid;
         border-color: #6b54c0;
+        border-radius: 0 0 5px 0;
+        transition: border-width .1s;
 
        
     }
