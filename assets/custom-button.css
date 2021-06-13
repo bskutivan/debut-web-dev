@@ -6,6 +6,7 @@
   position: relative;
   background-color: #8d6eff;
   border: solid;
+  border-color: #8d6eff;
   border-bottom-left-radius: 10px;
   width: 65%;
 }
@@ -21,6 +22,11 @@
   border-radius: 0 0 5px 0;
   -webkit-transition: border-width .1s;
   transition: border-width .1s;
+}
+
+.btn__custom:hover {
+  background-color: transparent;
+  color: black;
 }
 
 .btn__custom:after {
