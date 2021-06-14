@@ -46,7 +46,7 @@
 
                 {% if product.available == true %}                    
                     <div class="product__btn">
-                        <button class="btn btn__custom" id="js-btn-custom"type="button" data-productId="{{product.id}}">
+                        <button class="btn btn__custom" id="js-btn-custom"type="button" data-productId="{{product.id}}" onclick="addToCart({{product.id}})">
                             Add To Cart
                         </button>
                     </div>
@@ -58,21 +58,13 @@
 </div>
 
 <script>
-    window.onload = () => {
-       const buyBtn = document.querySelectorAll("#js-btn-custom");
 
-        for (var i = 0; i < buyBtn.length; i++) {
-
-            let productId = buyBtn[i].getAttribute('data-productId');
-
-            buyBtn[i].addEventListener("click", function(productId) {
-                addToCart(productId);
-            });
-        }
-    }
+    const buyBtns = document.querySelectorAll("#js-btn-custom");
 
     const addToCart = (productId) => {
+
         console.log(productId);
+        
     }
 
 </script>
