@@ -1,8 +1,8 @@
 # debut-web-dev-sklls-test
 
-For this skills test there were 3 main sections to achieve.
+For this skills test there were 3 main sections to achieve.<br>
 
-Link to Store: https://kicks-collaborative.myshopify.com/
+Link to Store: https://kicks-collaborative.myshopify.com/ <br>
 store password: blueacornFE1
 
 ## Section 1 - Create a new Dynamic Shopify Section
