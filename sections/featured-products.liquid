@@ -2,9 +2,14 @@
 {% assign products_per_row = 4 %}
 
 <script>
-    document.getElementById("js-btn-custom").addEventListener("click", () => {
-        console.log("hello!");
-    })
+    window.onload = () => {
+       const buyBtn = document.getElementById("js-btn-custom");
+       buyBtn.addEventListener("click", addToCart);
+    }
+
+    addToCart() {
+        console.log("Success!")
+    }
 </script>
 
 <div class="featured-products shopify-section page-width">
