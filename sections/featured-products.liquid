@@ -44,12 +44,17 @@
                     </span>
                 </div>
 
-                {% if product.available == true %}                    
+                {% if product.available == true %}
+                
+                {% assign desiredProduct = product.first_available_variant %}
+                {% assign productId = desiredProduct.id %}
+
                     <div class="product__btn">
-                        <button class="btn btn__custom" id="js-btn-custom"type="button" data-productId="{{product.id}}" onclick="addToCart({{product.id}})">
+                        <button class="btn btn__custom" id="js-btn-custom"type="button" data-productId="{{product.id}}" onclick="addToCart({{productId}})">
                             Add To Cart
                         </button>
                     </div>
+                    
                 {% endif %}
 
             </div>
@@ -63,8 +68,16 @@
 
     const addToCart = (productId) => {
 
-        console.log(productId);
-        
+        jQuery.post('cart/add.js', {
+            items: [
+                {
+                    quantity: 1,
+                    id: productId
+                }
+            ]
+        })
+        .then(response => response.json())
+        .then(data => {return data})
     }
 
 </script>
