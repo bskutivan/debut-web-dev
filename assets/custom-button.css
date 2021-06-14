@@ -9,6 +9,7 @@
   border-color: #8d6eff;
   border-bottom-right-radius: 26.2px;
   width: 75%;
+  outline: none;
 }
 
 .btn__custom:before {
@@ -28,5 +29,10 @@
   background-color: transparent !important;
   color: black !important;
   border-width: 2px;
+}
+
+.btn__custom:focus {
+  background-color: transparent;
+  color: black;
 }
 /*# sourceMappingURL=custom-button.css.map */

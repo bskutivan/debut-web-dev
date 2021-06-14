@@ -10,6 +10,7 @@
     border-color:#8d6eff;
     border-bottom-right-radius: 26.2px;
     width: 75%;
+    outline: none;
 
     &:before {
         content: "";
@@ -21,7 +22,7 @@
         border-color: #6b54c0 rgba(255,255,255,255) rgba(255,255,255,255) #6b54c0;
         border-radius: 0 0 5px 0;
         transition: border-width .1s;
-       
+
     }
 
     &:hover {
@@ -31,7 +32,7 @@
     }
 
     &:focus {
-        background-color: #6b54c07c;
+        background-color: transparent;
         color: black;
     }
 
