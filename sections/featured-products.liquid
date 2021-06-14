@@ -75,9 +75,9 @@
                     id: productId
                 }
             ]
-        })
-        .then(response => response.json())
-        .then(data => {return data})
+        }, function(data) {
+            console.log(data);
+        }, "json")
     }
 
 </script>
