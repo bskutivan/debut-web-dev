@@ -1,6 +1,12 @@
 {% assign featured = section.settings.featured_products %}
 {% assign products_per_row = 4 %}
 
+<script>
+    document.getElementById("js-btn-custom").addEventListener("click", () => {
+        console.log("hello!");
+    })
+</script>
+
 <div class="featured-products shopify-section page-width">
 
 {%- comment -%}
@@ -45,7 +51,7 @@
                 </div>
 
                 <div class="product__btn">
-                    <button class="btn btn__custom" type="button">
+                    <button class="btn btn__custom" id="js-btn-custom"type="button">
                         Add To Cart
                     </button>
                 </div>
