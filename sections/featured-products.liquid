@@ -62,15 +62,19 @@
        const buyBtn = document.querySelectorAll("#js-btn-custom");
 
         for (var i = 0; i < buyBtn.length; i++) {
+
             let productId = buyBtn[i].getAttribute('data-productId');
 
-            buyBtn[i].addEventListener("click", addToCart(productId));
+            buyBtn[i].addEventListener("click", function(productId) {
+                addToCart(productId);
+            });
         }
     }
 
     const addToCart = (productId) => {
         console.log(productId);
     }
+
 </script>
 
 
