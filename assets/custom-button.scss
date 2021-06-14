@@ -30,4 +30,9 @@
         border-width: 2px;
     }
 
+    &:focus {
+        background-color: #6b54c07c;
+        color: black;
+    }
+
 }
