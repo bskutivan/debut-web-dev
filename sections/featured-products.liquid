@@ -57,7 +57,10 @@
 <script>
     window.onload = () => {
        const buyBtn = document.querySelectorAll("#js-btn-custom");
-       buyBtn.addEventListener("click", addToCart);
+
+        for (var i = 0; i < buyBtn.length; i++) {
+           buyBtn[i].addEventListener("click", addToCart);
+        }
     }
 
     const addToCart = () => {
